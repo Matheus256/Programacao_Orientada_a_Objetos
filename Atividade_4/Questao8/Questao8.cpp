@@ -16,7 +16,7 @@ int main(){
   Varinha var1{"carvalho", "Pena de Fenix", 21.2};
   bruxo1.pegarVarinha(&var1);
   
-  //Agora com uma vainha
+  //Agora com uma varinha
   bruxo1.display();
   cout << endl;
   
