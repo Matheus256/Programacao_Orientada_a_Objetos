@@ -49,10 +49,12 @@ string Bruxo::getFeitico() const{
 }
 
 void Bruxo::lancarFeitico() const{
-  string aux{getFeitico()};
-  para_maiusculo(aux);
-  
-  cout << "Lançando Feitiço " << aux << endl;
+  if(varinha){
+    string aux{getFeitico()};
+    para_maiusculo(aux);
+    cout << "Lançando Feitiço " << aux << endl;
+  } else
+    cout << "Ops, estou sem a minha varinha" << endl;
 }
 
 void Bruxo::display() const{
