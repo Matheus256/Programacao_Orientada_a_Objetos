@@ -8,13 +8,17 @@
 #include "Trouxa.h"
 
 class ExpressoHogwarts{
+
+  friend std::ostream &operator<<(std::ostream &, const ExpressoHogwarts &);
+
 public:
     ExpressoHogwarts(): Passageiros{}{}
+    ~ExpressoHogwarts();
 
     ExpressoHogwarts &operator<<(const Bruxo &);
     ExpressoHogwarts &operator<<(const Trouxa &);
 
-    ExpressoHogwarts &operator<<(const std::string &);
+    ExpressoHogwarts &operator>>(const std::string &);
     ExpressoHogwarts &operator>>(const Pessoa &);
 
 
